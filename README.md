@@ -28,11 +28,6 @@ This Go application listens to a Kafka queue (`FIO`) for incoming full names in 
   "patronymic": "Vasilevich" // optional
 }
 
-
-Certainly! Here's the README.md content in Markdown format that you can copy:
-
-markdown
-Copy code
 # Project Name
 
 A Go application that receives full names from open APIs, enriches the data with age, gender, and nationality, and stores it in a PostgreSQL database. It also provides REST and GraphQL APIs for querying, adding, updating, and deleting person data. Additionally, data caching is implemented using Redis.
