@@ -21,14 +21,6 @@ A Go application that receives full names from open APIs, enriches the data with
 
 This Go application listens to a Kafka queue (`FIO`) for incoming full names in the following format:
 
-```json
-{
-  "name": "Dmitriy",
-  "surname": "Ushakov",
-  "patronymic": "Vasilevich" // optional
-}
-```
-
 A Go application that receives full names from open APIs, enriches the data with age, gender, and nationality, and stores it in a PostgreSQL database. It also provides REST and GraphQL APIs for querying, adding, updating, and deleting person data. Additionally, data caching is implemented using Redis.
 
 ## Table of Contents
@@ -48,6 +40,7 @@ This Go application listens to a Kafka queue (`FIO`) for incoming full names in 
   "surname": "Ushakov",
   "patronymic": "Vasilevich" // optional
 }
+```
 It enriches the data with age, gender, and nationality using external APIs and saves it in a PostgreSQL database. The application exposes REST and GraphQL APIs to query, add, update, and delete person data. Data caching is implemented using Redis.
 
 ## Architecture
